@@ -81,26 +81,26 @@ int isBalanced(char *expr) {
 }
 
 int main() {
-    char expr1[] = "a + (b - c) * (d)";
-    char expr2[] = "m + [a - b * (c + d * {m)]";
-    char expr3[] = "a + (b - c)";
+    char exp_1[] = "a + (b - c) * (d)";
+    char exp_2[] = "m + [a - b * (c + d * {m)]";
+    char exp_3[] = "a + (b - c)";
     
-    printf("Testing the Expression 1: %s\n", expr1);
-    if (isBalanced(expr1)) {
+    printf("Testing the Expression 1: %s\n", exp_1);
+    if (isBalanced(exp_1)) {
         printf("Result: BALANCED\n\n");
     } else {
         printf("Result: NOT BALANCED\n\n");
     }
     
-    printf("Testing Expression 2: %s\n", expr2);
-    if (isBalanced(expr2)) {
+    printf("Testing Expression 2: %s\n", exp_2);
+    if (isBalanced(exp_2)) {
         printf("Result: BALANCED\n\n");
     } else {
         printf("Result: NOT BALANCED\n\n");
     }
     
-    printf("Testing Expression 3: %s\n", expr3);
-    if (isBalanced(expr3)) {
+    printf("Testing Expression 3: %s\n", exp_3);
+    if (isBalanced(exp_3)) {
         printf("Result: BALANCED\n\n");
     } else {
         printf("Result: NOT BALANCED\n\n");
